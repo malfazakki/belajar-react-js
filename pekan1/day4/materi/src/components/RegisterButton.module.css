@@ -1,0 +1,12 @@
+.button {
+	background-color: azure;
+	padding: 5px;
+	border-radius: 5px;
+	color: green;
+	cursor: pointer;
+}
+
+.button:hover {
+	opacity: 80%;
+	box-shadow: 3px 3px 5px;
+}
