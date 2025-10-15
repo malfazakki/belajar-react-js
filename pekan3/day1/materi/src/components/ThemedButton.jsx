@@ -1,0 +1,22 @@
+import useTheme from "../context/ThemeContext";
+
+export default function ThemedButton() {
+	const { theme, toggleTheme } = useTheme();
+
+	const buttonStyle = {
+		backgroundColor: theme === "light" ? "#eee" : "#333",
+		color: theme === "light" ? "#333" : "#eee",
+		padding: "10px 20px",
+		border: "none",
+		borderRadius: "5px",
+		cursor: "pointer",
+	};
+
+	return (
+		<>
+			<button style={buttonStyle} onClick={toggleTheme}>
+				Ganti Tema ({theme})
+			</button>
+		</>
+	);
+}
