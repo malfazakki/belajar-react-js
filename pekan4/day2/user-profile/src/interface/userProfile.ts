@@ -1,0 +1,20 @@
+// Complex interfaces untuk real-world scenario
+export interface UserProfileInterface {
+	id: number;
+	personalInfo: {
+		firstName: string;
+		lastName: string;
+		email: string;
+		avatar?: string;
+	};
+	preferences: {
+		theme: "light" | "dark" | "auto";
+		notifications: boolean;
+		language: string;
+	};
+	stats: {
+		loginCount: number;
+		lastLogin: Date;
+		accountCreated: Date;
+	};
+}
